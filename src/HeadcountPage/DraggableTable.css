@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.draggable-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.draggable-table th,
+.draggable-table td {
+  border: none;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.draggable-table th {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.draggable-table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.draggable-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.draggable-table tbody tr:hover {
+  background-color: #e8eaf6;
+  cursor: grab;
+}
+
+.group {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.group h2, .group-inner h3, .group-inner h4, .group-inner h5 {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.group-inner {
+  margin: 15px;
+}
+
+.draggable-table tbody tr.vacant {
+  background-color: #fff9c4;
+}
+
+.Modal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Modal__Content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Modal__Content h2 {
+  margin-top: 0;
+  color: #3f51b5;
+}
+
+.Modal__Content input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.Modal__Content ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.Modal__Content li {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Modal__Content li:hover {
+  background-color: #e8eaf6;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+.badge-assign {
+  color: #3f51b5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.accordion-summary {
+  min-height: 48px !important;
+}
+
+.accordion-details {
+  padding: 0 16px 16px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-summary .MuiAccordionSummary-content {
+  align-items: center;
+}
+
+/* Add this to your existing CSS */
+
+.MuiTableRow-root {
+  transition: background-color 0.3s ease;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.MuiTableCell-root {
+  padding: 16px;
+}
+
+.MuiPaper-root {
+  margin-bottom: 24px;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Add more project-specific styles as needed */
+.project-1001 {
+  border-left: 4px solid #1565c0;
+}
+
+.project-HR {
+  border-left: 4px solid #f57c00;
+}
+
+/* Add this to your existing CSS */
+
+.MuiListItem-root.Mui-selected {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.MuiListItem-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.project-list-item {
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.project-table-container {
+  min-height: 200px;
+}
